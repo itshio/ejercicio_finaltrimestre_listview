@@ -72,6 +72,8 @@
         android:gravity="center_horizontal"
         android:text="@string/textotitulo"
         android:background="@color/LightGrey"
+        android:fontFamily="@font/letra"
+        android:onClick="limpiar"
         android:textColor="@color/Black"
         android:textSize="@dimen/d25" />
 

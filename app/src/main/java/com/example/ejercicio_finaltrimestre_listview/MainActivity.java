@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         txtaltura=(TextView)findViewById(R.id.txt_altura);
         imgperro=(ImageView)findViewById(R.id.img_principal);
 
+        imgperro.setImageResource(android.R.color.transparent);
+
         cargarperros();
 
         lvprincipal=(ListView)findViewById(R.id.lv_perros);
@@ -156,6 +158,15 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_LONG).show();
 
 
+    }
+
+    public void limpiar (View view){
+
+        txtaltura.setText("Altura: ");
+        txtpeso.setText("Peso: ");
+        txtcolor.setText("Color ");
+
+        imgperro.setImageResource(android.R.color.transparent);
     }
 
 
